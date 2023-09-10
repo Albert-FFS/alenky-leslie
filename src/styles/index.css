@@ -1,0 +1,28 @@
+:root {
+  --Purple: #6200ea;
+  --Green: #00ea62;
+  --Orange: #ea6200;
+  --FontPrimary: "DM Serif Text", serif;
+  --FontSecondary: "Nunito Sans", serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  background: linear-gradient(
+    to right bottom,
+    var(--Purple) 50%,
+    #aaa 
+  );
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

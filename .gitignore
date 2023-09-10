@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#Temporal Work
+/src/pages
+/src/hooks
+/src/libs
+/src/test
