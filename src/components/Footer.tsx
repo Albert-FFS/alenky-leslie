@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react";
 import "../styles/Footer.css";
 export default function Footer() {
   return (
     <footer>
+      <div className="LinksFooter">
         <a href="#" target="_blank" rel="noopener noreferrer">
           Acerca De Mi
         </a>
@@ -24,6 +25,10 @@ export default function Footer() {
         <a href="#" target="_blank" rel="noopener noreferrer">
           Licencias
         </a>
-      </footer>
-  )
+      </div>
+      <div className="SocialMedia">
+        
+      </div>
+    </footer>
+  );
 }

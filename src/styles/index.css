@@ -2,6 +2,13 @@
   --Purple: #6200ea;
   --Green: #00ea62;
   --Orange: #ea6200;
+  /* Paleta de Colores */
+  --ColdPurple: #9988dd;
+  --ColdNavyBlue: #2527ff;
+  --ColdSkyBlue: #1099bb;
+  --ColdGreen: #15ab92;
+  --ColdPink: #f3aacb;
+  /* Fuentes a usar */
   --FontPrimary: "DM Serif Text", serif;
   --FontSecondary: "Nunito Sans", serif;
 }
@@ -15,14 +22,11 @@ body {
   max-width: 100vw;
   min-height: 100vh;
   display: flex;
-  background: linear-gradient(
-    to right bottom,
-    var(--Purple) 50%,
-    #aaa 
-  );
+  background: linear-gradient(to right bottom, var(--Purple) 50%, #aaa);
   flex-direction: column;
   align-items: center;
   justify-content: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* position: relative; */
 }
