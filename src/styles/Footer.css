@@ -21,10 +21,7 @@ footer .AboutMe h4 {
   color: var(--ColdPink);
   letter-spacing: 2px;
   font-weight: 500;
-}
-footer.AboutMe::selection {
-  background: #fff;
-  color: var(--ColdPurple);
+  user-select: none;
 }
 footer .AboutMe p {
   font-size: 1em;
