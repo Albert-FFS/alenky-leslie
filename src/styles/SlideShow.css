@@ -1,0 +1,17 @@
+.SlideShow{
+  width: 80%;
+  height: 200px;
+  background: #fff;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+  padding: 0 20%;
+  scroll-behavior: smooth;
+  scroll-snap-type: proximity;
+}
+.SlideShow img{
+  height: 100%;
+  object-fit: contain;
+  margin: 0 10px;
+}
