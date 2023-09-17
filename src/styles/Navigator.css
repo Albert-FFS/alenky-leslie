@@ -1,3 +1,62 @@
-.Navigator{
+.Navigator {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
   background: #fff;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(to bottom, var(--ColdPink), var(--ColdSkyBlue));
+}
+.Navigator button {
+  background: transparent;
+  width: 48px;
+  height: 48px;
+  font-size: 2em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+.Navigator button:hover {
+  background: radial-gradient(var(--ColdPurple), var(--ColdPink));
+  color: #fff;
+}
+.Navigator ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Navigator ul li {
+  list-style-type: none;
+}
+.Navigator ul li a {
+  transition: all ease 0.5s;
+  font-size: 1.25em;
+  font-family: var(--FontPrimary);
+  padding: 8px 24px;
+  color: var(--ColdNavyBlue);
+  background: linear-gradient(to bottom, var(--ColdPink), var(--ColdSkyBlue));
+  border-radius: 10px ;
+  text-decoration: none;
+  margin: 0 1px;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -webkit-border-radius: 10px ;
+  -moz-border-radius: 10px ;
+  -ms-border-radius: 10px ;
+  -o-border-radius: 10px ;
+}
+.Navigator ul li a:hover {
+  background: linear-gradient(to left bottom, var(--ColdPink), var(--ColdSkyBlue));
+  color: #fff;
+  text-decoration: underline;
 }

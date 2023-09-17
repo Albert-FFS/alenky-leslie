@@ -3,6 +3,7 @@ import "../styles/Navigator.css";
 export default function Navigator() {
   return (
     <nav className="Navigator">
+      <button>☰</button>
       <ul>
         <li>
           <a href="#">Home</a>
