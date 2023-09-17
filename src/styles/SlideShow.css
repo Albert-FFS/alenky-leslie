@@ -1,7 +1,6 @@
-.SlideShow{
+.SlideShow {
   width: 80%;
   height: 200px;
-  background: #fff;
   overflow-y: hidden;
   overflow-x: scroll;
   display: flex;
@@ -9,8 +8,66 @@
   padding: 0 20%;
   scroll-behavior: smooth;
   scroll-snap-type: proximity;
+  position: relative;
 }
-.SlideShow img{
+.SlideShow button {
+  color: #000;
+  background-color: #fff;
+  height: 50px;
+  min-width: 50px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  position: sticky;
+  top: calc(50% - 25px);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  border: 1px solid transparent;
+}
+.SlideShow button:hover {
+  color: #fff;
+  background: #000;
+  border: 1px solid #fff;
+}
+.SlideShow button::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all ease 0.25s;
+  -webkit-transition: all ease 0.25s;
+  -moz-transition: all ease 0.25s;
+  -ms-transition: all ease 0.25s;
+  -o-transition: all ease 0.25s;
+}
+.SlideShow button:first-child {
+  left: -100px;
+}
+.SlideShow button:first-child::before {
+  content: "❮";
+  left: 0;
+}
+.SlideShow button:first-child:hover::before {
+  left: -10px;
+}
+.SlideShow button:last-child {
+  right: -100px;
+}
+.SlideShow button:last-child::before{
+  content: '❯';
+  right: 0;
+}
+.SlideShow button:last-child:hover::before{
+  right: -10px;
+}
+.SlideShow img {
   height: 100%;
   object-fit: contain;
   margin: 0 10px;

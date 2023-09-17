@@ -10,9 +10,16 @@ import Banner07 from "./img/Banner 07.jpg";
 import Banner08 from "./img/Banner 08.jpg";
 import Banner09 from "./img/Banner 09.jpg";
 import Banner10 from "./img/Banner 10.jpg";
+
 export default function SlideShow() {
+  const SlideShowContainer = document.querySelector(".SlideShow");
+  const Banners = SlideShowContainer?.querySelectorAll("img");
+  const ScrollSlideShow = () =>{
+
+  }
   return (
     <div className="SlideShow">
+      <button type="button">❮</button>
       <img src={Banner01} alt="Banner 01" />
       <img src={Banner02} alt="Banner 02" />
       <img src={Banner03} alt="Banner 03" />
@@ -23,6 +30,7 @@ export default function SlideShow() {
       <img src={Banner08} alt="Banner 08" />
       <img src={Banner09} alt="Banner 09" />
       <img src={Banner10} alt="Banner 10" />
+      <button type="button">❯</button>
     </div>
   );
 }
