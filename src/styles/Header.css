@@ -1,0 +1,59 @@
+header{
+  background: linear-gradient(to bottom right,var(--ColdSkyBlue),var(--ColdPink));
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  margin-top: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: text;
+}
+header h1::selection,
+header h2::selection,
+header p::selection{
+  background-color: var(--ColdPink);
+  color: #fff;
+}
+header h1{
+  font-family: var(--FontPrimary);
+  margin-bottom: 1em;
+  font-weight: 900;
+  letter-spacing: 10px;
+  color: var(--ColdPink);
+  text-transform: uppercase;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
+}
+header:hover h1{
+  letter-spacing: 3px;
+}
+header h2{
+  margin-bottom: 10px;
+  font-family: var(--FontPrimary);
+  word-spacing: 5px;
+  font-size: 3em;
+  background: linear-gradient(to bottom, var(--ColdPurple),var(--ColdPink));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
+}
+header:hover h2{
+  text-shadow: 1px 1px 2px #fff;
+}
+header p{
+ font-family: var(--FontSecondary);
+ font-size: 1.5em;
+ font-weight: 500;
+ color: #000;
+}
